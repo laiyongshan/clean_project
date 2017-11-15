@@ -65,8 +65,6 @@ public class MeiZhiFragment extends BaseFragment<MeiZhiContract.Presenter> imple
             meiZhiPresenter = new MeiZhiPresenter(this);
             meiZhiPresenter.start();
         }
-
-
     }
 
 

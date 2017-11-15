@@ -18,7 +18,7 @@ public class MainAPIServiceImp extends APIService {
     /**
      * @return
      */
-    public static Observable<Meizhi> getMeiZhi(String date) {
+    public static Observable<Meizhi> getMeiZhi(String date){
         Observable<Meizhi> ss = apiManager.getMeiZhi( date);
         TLog.logI(date);
         return  ss;
