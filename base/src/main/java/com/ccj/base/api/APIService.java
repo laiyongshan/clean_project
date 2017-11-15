@@ -19,6 +19,22 @@ public class APIService {
     public static final String URL_GANK_IO = "http://gank.io";//gank.io 中的妹子API
 
 
+    private static APIService apiService;
+
+    //单利
+    public static APIService getIntance(){
+        if (apiService==null){
+            synchronized (APIService.class){
+                if(apiService==null){
+                    apiService=new APIService();
+                }
+            }
+        }
+
+        return apiService;
+    }
+
+
     /**
      * 基础地址
      * 初始化 retroft
@@ -31,11 +47,6 @@ public class APIService {
 
 //    protected static final RetrofitRequest apiManager = sRetrofit.create(RetrofitRequest.class);
 
-
-
     /**********************仿照上面的方法,进行请求数据****************************/
-
-
-
 
 }

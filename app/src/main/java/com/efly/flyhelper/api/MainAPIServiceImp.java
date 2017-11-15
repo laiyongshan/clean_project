@@ -14,7 +14,7 @@ import rx.Observable;
 public class MainAPIServiceImp extends APIService {
 
 
-    protected static final MainRetrofitImp apiManager = sRetrofit.create(MainRetrofitImp.class);
+    protected static final MainRetrofitImp apiManager = APIService.getIntance().sRetrofit.create(MainRetrofitImp.class);
 
     /**
      *

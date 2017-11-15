@@ -4,8 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
-      <module fileurl="file://$PROJECT_DIR$/clean-project-architecture.iml" filepath="$PROJECT_DIR$/clean-project-architecture.iml" />
-      <module fileurl="file://$PROJECT_DIR$/clean-project-architecture-master.iml" filepath="$PROJECT_DIR$/clean-project-architecture-master.iml" />
+      <module fileurl="file://D:\Documents\GitHub\clean_project\clean-project-architecture.iml" filepath="D:\Documents\GitHub\clean_project\clean-project-architecture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clean_project.iml" filepath="$PROJECT_DIR$/clean_project.iml" />
       <module fileurl="file://$PROJECT_DIR$/loginmodule/loginmodule.iml" filepath="$PROJECT_DIR$/loginmodule/loginmodule.iml" />
       <module fileurl="file://$PROJECT_DIR$/videomodule/videomodule.iml" filepath="$PROJECT_DIR$/videomodule/videomodule.iml" />
     </modules>

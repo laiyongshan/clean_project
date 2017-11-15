@@ -7,6 +7,7 @@ package com.ccj.base.utils.router;
 public class ModuleManager {
 //    private ModuleOptions options;
     private ModuleManager() {
+
     }
     private static class ModuleManagerHolder {
         private static final ModuleManager instance = new ModuleManager();

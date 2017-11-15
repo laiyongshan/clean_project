@@ -74,7 +74,6 @@ public class MeiZhiPresenter  implements MeiZhiContract.Presenter {
                         ArrayList<Meizhi.ResultsBean> meiZhiTemp = (ArrayList<Meizhi.ResultsBean>) getIpInfoResponse.results;
                         if (getIpInfoResponse.error==true){
                             view.showError("请求错误");
-
                         }
                         if (page >= 0) {
                             meiZhi = meiZhiTemp;
