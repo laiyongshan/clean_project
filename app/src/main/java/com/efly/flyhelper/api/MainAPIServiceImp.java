@@ -13,12 +13,9 @@ import rx.Observable;
 
 public class MainAPIServiceImp extends APIService {
 
-
     protected static final MainRetrofitImp apiManager = APIService.getIntance().sRetrofit.create(MainRetrofitImp.class);
 
     /**
-     *
-     *
      * @return
      */
     public static Observable<Meizhi> getMeiZhi(String date) {
