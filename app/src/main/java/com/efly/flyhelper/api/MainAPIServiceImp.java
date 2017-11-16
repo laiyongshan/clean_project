@@ -2,6 +2,7 @@ package com.efly.flyhelper.api;
 
 import com.ccj.base.api.APIService;
 import com.ccj.base.utils.TLog;
+import com.efly.flyhelper.bean.GankBean;
 import com.efly.flyhelper.bean.Meizhi;
 
 import rx.Observable;
@@ -28,6 +29,12 @@ public class MainAPIServiceImp extends APIService {
         Observable<String> ss = apiManager.getData();
         TLog.logI(ss.toString());
         return  ss;
+    }
+
+    public static Observable<GankBean> getGankBean(int page){
+        Observable<GankBean> gg=apiManager.getGankData(page);
+        TLog.logI(gg.toString());
+        return gg;
     }
 
 }

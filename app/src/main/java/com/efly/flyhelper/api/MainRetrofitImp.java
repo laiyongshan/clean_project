@@ -1,5 +1,6 @@
 package com.efly.flyhelper.api;
 
+import com.efly.flyhelper.bean.GankBean;
 import com.efly.flyhelper.bean.Meizhi;
 import com.efly.flyhelper.bean.WeatherData;
 
@@ -39,6 +40,9 @@ public interface MainRetrofitImp {
 
     @GET("http://www.baidu.com")
     Observable<String> getData();
+
+    @GET("api/data/Android/10/{page}")
+    Observable<GankBean> getGankData(@Path("page") int page);
 
 
     /**
