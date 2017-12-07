@@ -33,7 +33,6 @@ import butterknife.ButterKnife;
 public class MeiZhiFragment extends BaseFragment<MeiZhiContract.Presenter> implements MeiZhiContract.View,SwipeRefreshLayout.OnRefreshListener,ItemClickListener,
         OnLoadNextListener{
 
-
     private static final String TAG = MeiZhiFragment.class.getSimpleName();
     @BindView(R.id.srl)
     SwipeRefreshLayout swipeRefreshLayout;
@@ -80,7 +79,6 @@ public class MeiZhiFragment extends BaseFragment<MeiZhiContract.Presenter> imple
         recyclerView.setItemAnimator(new CustomItemAnimator());
         recyclerView.setAdapter(constantAdapter);
     }
-
 
     @Override
     public void showProgress() {
