@@ -4,6 +4,7 @@ repositories {
 }
 android {
 
+
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
     defaultConfig {
@@ -51,7 +52,6 @@ android {
     dataBinding {
         enabled = true
     }
-
 }
 
 
@@ -72,6 +72,7 @@ dependencies {
     compile 'com.zhy:okhttputils:2.6.2'
     compile 'com.google.code.gson:gson:2.3.1'
 
+
     if (isModule.toBoolean()) {
 //        当isDebug true，app得依赖基础库，保证app不报错
         compile project(':base')
@@ -80,7 +81,4 @@ dependencies {
         compile project(':loginmodule')
         compile project(':videomodule')
     }
-
-
-
 }

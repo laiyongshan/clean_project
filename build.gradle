@@ -11,6 +11,8 @@ buildscript {
 
         //butterknife
         classpath 'com.jakewharton:butterknife-gradle-plugin:8.7.0'
+
+//        classpath 'com.antfortune.freeline:gradle:0.8.3'
     }
 }
 
