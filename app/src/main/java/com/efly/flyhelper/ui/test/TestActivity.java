@@ -13,7 +13,7 @@ import com.efly.flyhelper.R;
  * Created by Administrator on 2017/12/18.
  */
 
-public class TestActivity extends BaseActivity {
+public class TestActivity extends BaseActivity<TestContract.Presenter> implements  TestContract.View{
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
