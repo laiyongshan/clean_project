@@ -22,8 +22,6 @@ import rx.Observable;
 
 public interface MainRetrofitImp {
 
-
-
     /**
      * 获取天气数据(测试)
      * @param cityname

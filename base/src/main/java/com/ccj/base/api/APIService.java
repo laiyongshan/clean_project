@@ -1,6 +1,9 @@
 package com.ccj.base.api;
 
 
+import com.zhy.http.okhttp.OkHttpUtils;
+
+import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -33,6 +36,31 @@ public class APIService {
 
         return apiService;
     }
+
+
+    /**
+     * 基础地址
+     * 初始化 retroft
+     */
+    protected static final Retrofit getsRetrofit(){
+        OkHttpClient client=new OkHttpClient.Builder()
+                //添加应用拦截器
+//                .addInterceptor(new MyOkhttpInterceptor())
+        //添加网络拦截器
+//                .addNetworkInterceptor(new MyOkhttpInterceptor())
+        .build();
+
+        Retrofit sRetrofit=new Retrofit.Builder()
+                .baseUrl(URL_GANK_IO != null ? URL_HOST : URL_GANK_IO)
+                .client(client)
+                .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJavaCallAdapterFactory.create()) // 使用RxJava作为回调适配器
+                .build();
+
+        return  sRetrofit;
+
+    }
+
 
 
     /**
