@@ -5,6 +5,8 @@ buildscript {
         jcenter()
         //butterknife
         mavenCentral()
+        mavenLocal()
+        mavenCentral()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.2'
@@ -19,6 +21,11 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
+        mavenCentral()
+    }
+
+    repositories {
+        maven { url "https://jitpack.io" }
     }
 }
 

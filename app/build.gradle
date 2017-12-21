@@ -72,6 +72,9 @@ dependencies {
     compile 'com.zhy:okhttputils:2.6.2'
     compile 'com.google.code.gson:gson:2.3.1'
 
+    //BRAVH
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.+'
+
 
     if (isModule.toBoolean()) {
 //        当isDebug true，app得依赖基础库，保证app不报错
