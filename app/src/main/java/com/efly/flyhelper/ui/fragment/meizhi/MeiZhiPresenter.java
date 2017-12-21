@@ -56,6 +56,7 @@ public class MeiZhiPresenter  implements MeiZhiContract.Presenter {
         String date = DateStringUtils.getBeforeStringDate(page);
         Observable<Meizhi> userObservable = MainAPIServiceImp.getMeiZhi(date);
 
+        TLog.logI(date+"");
 
         userObservable.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
