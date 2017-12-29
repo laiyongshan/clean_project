@@ -83,6 +83,7 @@ public class MainActivity extends BaseActivity<MainContract.Presenter> implement
             mTabHost.getTabWidget().getChildAt(i).setBackgroundColor(Color.WHITE);
         }
 
+        toolbar_title.setText(tabHostTagArray[0]);
         tabChangeListener = new TabHost.OnTabChangeListener() {
             @Override
             public void onTabChanged(String tabId) {

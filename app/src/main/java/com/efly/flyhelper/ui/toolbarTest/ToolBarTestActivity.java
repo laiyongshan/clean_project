@@ -2,6 +2,7 @@ package com.efly.flyhelper.ui.toolbarTest;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -42,6 +43,21 @@ public class ToolBarTestActivity extends BaseActivity {
         if (navigationView != null) {
             setupDrawerContent(navigationView);
         }
+
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch (item.getItemId()) {
+                    case R.id.nav_home:
+                        Toast.makeText(ToolBarTestActivity.this,"home",Toast.LENGTH_LONG).show();
+                        break;
+                }
+                mDrawerLayout.closeDrawer(GravityCompat.START);
+                return true;
+            }
+        });
+
     }
 
     @Override
