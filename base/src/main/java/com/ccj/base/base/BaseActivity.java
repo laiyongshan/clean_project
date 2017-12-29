@@ -8,6 +8,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
@@ -36,6 +37,7 @@ public class BaseActivity<T extends BasePresenter>
     public T mPresenter;
     protected Dialog progressDialog;
     protected Toolbar toolbar;
+    protected ActionBar ab;
     protected Context mContext;
     private int fragmentIndex = 0;
 
@@ -81,6 +83,7 @@ public class BaseActivity<T extends BasePresenter>
     public Toolbar getToolbar() {
         return toolbar;
     }
+
 
     /**
      * 资源释放

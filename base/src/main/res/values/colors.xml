@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#FF03A9F4</color>
+    <color name="colorPrimaryDark">#FF03A9F4</color>
+    <color name="colorAccent">#FF03A9F4</color>
 
 
     <!-- <color name="colorPrimary">#FF03A9F4</color>
@@ -37,6 +37,6 @@
     <color name="tans">#00000000</color>
 
 
-    <color name="tool_bar_white">@android:color/white</color>
+    <color name="tool_bar_white">#FFFFFF</color>
 
 </resources>
