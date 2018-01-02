@@ -57,25 +57,18 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     testCompile 'junit:junit:4.12'
-
     //arouter
     annotationProcessor rootProject.ext.arouterCompiler
-
     //butterknife
     annotationProcessor rootProject.ext.butterknifeCompiler
-
     compile 'com.zhy:okhttputils:2.6.2'
     compile 'com.google.code.gson:gson:2.3.1'
-
     //BRAVH
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.+'
-
-
     if (isModule.toBoolean()) {
 //        当isDebug true，app得依赖基础库，保证app不报错
         compile project(':base')
@@ -84,4 +77,5 @@ dependencies {
         compile project(':loginmodule')
         compile project(':videomodule')
     }
+    compile project(':loadinglib')
 }
