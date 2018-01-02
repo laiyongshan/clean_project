@@ -1,4 +1,4 @@
-package com.efly.flyhelper.util;
+package com.efly.flyhelper.utils;
 
 import android.view.Gravity;
 import android.widget.Toast;

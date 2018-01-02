@@ -1,4 +1,4 @@
-package com.efly.flyhelper.util;
+package com.efly.flyhelper.utils;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.WindowManager;
 
 /**
- * 获得屏幕相关的辅助类 
+ * 获得屏幕相关的辅助类
  *
  */
 

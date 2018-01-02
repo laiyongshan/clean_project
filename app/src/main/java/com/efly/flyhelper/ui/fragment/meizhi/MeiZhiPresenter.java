@@ -1,9 +1,6 @@
 package com.efly.flyhelper.ui.fragment.meizhi;
 
-import android.widget.Toast;
-
-import com.efly.flyhelper.AppApplication;
-import com.efly.flyhelper.util.ToastUtil;
+import com.efly.flyhelper.utils.ToastUtil;
 import com.lys.base.utils.DateStringUtils;
 import com.lys.base.utils.TLog;
 import com.efly.flyhelper.api.MainAPIServiceImp;
@@ -15,8 +12,6 @@ import rx.Observable;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
-
-import static com.lys.base.api.VolleyUtils.context;
 
 /**
  * Created by Administrator on 2016/11/1.
