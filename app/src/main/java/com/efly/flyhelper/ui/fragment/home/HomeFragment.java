@@ -14,14 +14,12 @@ import android.widget.Toast;
 import com.alibaba.android.arouter.facade.Postcard;
 import com.alibaba.android.arouter.facade.callback.NavigationCallback;
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.ccj.base.Constants;
-import com.ccj.base.base.BaseApplication;
-import com.ccj.base.base.BaseFragment;
-import com.ccj.base.utils.DialogCreator;
-import com.ccj.base.utils.TDeviceUtils;
-import com.ccj.base.utils.router.RouterConstants;
+import com.lys.base.Constants;
+import com.lys.base.base.BaseApplication;
+import com.lys.base.base.BaseFragment;
+import com.lys.base.utils.DialogCreator;
+import com.lys.base.utils.router.RouterConstants;
 import com.efly.flyhelper.R;
-import com.efly.flyhelper.ui.fragment.meizhi.MeiZhiPresenter;
 
 import java.util.HashMap;
 

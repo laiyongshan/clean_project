@@ -1,7 +1,7 @@
 package com.efly.flyhelper.ui.fragment.home;
 
-import com.ccj.base.base.BasePresenter;
-import com.ccj.base.base.BaseView;
+import com.lys.base.base.BasePresenter;
+import com.lys.base.base.BaseView;
 
 import java.util.HashMap;
 

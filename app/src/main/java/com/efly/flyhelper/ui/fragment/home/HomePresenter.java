@@ -1,20 +1,12 @@
 package com.efly.flyhelper.ui.fragment.home;
 
-import com.ccj.base.utils.TLog;
-import com.efly.flyhelper.api.MainAPIServiceImp;
-import com.efly.flyhelper.bean.Meizhi;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.StringCallback;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 import okhttp3.Call;
 import okhttp3.Request;
-import rx.Observable;
-import rx.Subscriber;
-import rx.android.schedulers.AndroidSchedulers;
-import rx.schedulers.Schedulers;
 
 /**
  * Created by Administrator on 2017/8/25.

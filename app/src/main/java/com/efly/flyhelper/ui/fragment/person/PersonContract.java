@@ -1,8 +1,8 @@
 package com.efly.flyhelper.ui.fragment.person;
 
-import com.ccj.base.base.BaseModel;
-import com.ccj.base.base.BasePresenter;
-import com.ccj.base.base.BaseView;
+import com.lys.base.base.BaseModel;
+import com.lys.base.base.BasePresenter;
+import com.lys.base.base.BaseView;
 
 /**
  * Created by Administrator on 2017/11/16.

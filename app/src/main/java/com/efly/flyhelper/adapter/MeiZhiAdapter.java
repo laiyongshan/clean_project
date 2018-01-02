@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.ccj.base.adapter.BaseRecycleAdapter;
+import com.lys.base.adapter.BaseRecycleAdapter;
 import com.efly.flyhelper.R;
 import com.efly.flyhelper.bean.Meizhi;
 import com.squareup.picasso.Picasso;

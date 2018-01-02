@@ -1,8 +1,8 @@
 package com.efly.flyhelper.ui.main;
 
 
-import com.ccj.base.base.BasePresenter;
-import com.ccj.base.base.BaseView;
+import com.lys.base.base.BasePresenter;
+import com.lys.base.base.BaseView;
 
 /**
  * Created by Administrator on 2016/7/7.

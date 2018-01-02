@@ -4,7 +4,7 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.ccj.base.adapter.BaseListAdapter;
+import com.lys.base.adapter.BaseListAdapter;
 
 import java.util.ArrayList;
 

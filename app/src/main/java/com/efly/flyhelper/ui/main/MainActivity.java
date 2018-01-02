@@ -11,8 +11,8 @@ import android.widget.ImageView;
 import android.widget.TabHost;
 import android.widget.TextView;
 
-import com.ccj.base.AppManager;
-import com.ccj.base.base.BaseActivity;
+import com.lys.base.AppManager;
+import com.lys.base.base.BaseActivity;
 import com.efly.flyhelper.R;
 import com.efly.flyhelper.ui.fragment.home.HomeFragment;
 import com.efly.flyhelper.ui.fragment.person.PersonFragment;

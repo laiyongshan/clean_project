@@ -1,6 +1,6 @@
 package com.efly.flyhelper;
 
-import com.ccj.base.base.BaseApplication;
+import com.lys.base.base.BaseApplication;
 
 /**
  * ARouter 这里必须在 这里初始化, 在 base里面初始化 无效,奇怪

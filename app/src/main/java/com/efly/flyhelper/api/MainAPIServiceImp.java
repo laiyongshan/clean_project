@@ -1,7 +1,7 @@
 package com.efly.flyhelper.api;
 
-import com.ccj.base.api.APIService;
-import com.ccj.base.utils.TLog;
+import com.lys.base.api.APIService;
+import com.lys.base.utils.TLog;
 import com.efly.flyhelper.bean.GankBean;
 import com.efly.flyhelper.bean.Meizhi;
 

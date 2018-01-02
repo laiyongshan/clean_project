@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.ccj.base.view.recycleview.SuperRecycleView
+        <com.lys.base.view.recycleview.SuperRecycleView
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>

@@ -1,9 +1,9 @@
 package com.efly.flyhelper.ui.fragment.meizhi;
 
 
-import com.ccj.base.base.BasePresenter;
-import com.ccj.base.base.BaseView;
-import com.ccj.base.bean.User;
+import com.lys.base.base.BasePresenter;
+import com.lys.base.base.BaseView;
+import com.lys.base.bean.User;
 import com.efly.flyhelper.bean.Meizhi;
 
 import java.util.ArrayList;
