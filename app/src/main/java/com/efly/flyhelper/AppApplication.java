@@ -1,5 +1,7 @@
 package com.efly.flyhelper;
 
+import android.content.Context;
+
 import com.lys.base.base.BaseApplication;
 
 /**
@@ -9,13 +11,19 @@ import com.lys.base.base.BaseApplication;
 
 public class AppApplication extends BaseApplication {
 
+    public static Context mContext;
 
     @Override
     public void onCreate() {
         super.onCreate();
 
+        mContext=getApplicationContext();
     }
 
-
+    /**获取系统上下文：用于ToastUtil类*/
+    public static Context getAppContext()
+    {
+        return mContext;
+    }
 
 }

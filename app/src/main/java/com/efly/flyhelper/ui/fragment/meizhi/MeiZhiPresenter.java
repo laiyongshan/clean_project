@@ -1,5 +1,9 @@
 package com.efly.flyhelper.ui.fragment.meizhi;
 
+import android.widget.Toast;
+
+import com.efly.flyhelper.AppApplication;
+import com.efly.flyhelper.util.ToastUtil;
 import com.lys.base.utils.DateStringUtils;
 import com.lys.base.utils.TLog;
 import com.efly.flyhelper.api.MainAPIServiceImp;
@@ -11,6 +15,8 @@ import rx.Observable;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
+
+import static com.lys.base.api.VolleyUtils.context;
 
 /**
  * Created by Administrator on 2016/11/1.
@@ -56,6 +62,8 @@ public class MeiZhiPresenter  implements MeiZhiContract.Presenter {
 
         TLog.logI(date+"");
 
+        ToastUtil.showLongToastTop(date.toString()+"");
+
         userObservable.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Subscriber<Meizhi>() {
@@ -72,6 +80,7 @@ public class MeiZhiPresenter  implements MeiZhiContract.Presenter {
 
                     @Override
                     public void onNext(Meizhi getIpInfoResponse) {
+
                         ArrayList<Meizhi.ResultsBean> meiZhiTemp = (ArrayList<Meizhi.ResultsBean>) getIpInfoResponse.results;
                         if (getIpInfoResponse.error==true){
                             view.showError("请求错误");
