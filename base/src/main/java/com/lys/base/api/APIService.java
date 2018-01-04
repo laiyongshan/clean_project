@@ -22,7 +22,7 @@ public class APIService {
 
     private static APIService apiService;
 
-    //单利
+    //单例
     public static APIService getIntance(){
         if (apiService==null){
             synchronized (APIService.class){
