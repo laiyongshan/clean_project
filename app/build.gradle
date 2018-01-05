@@ -78,4 +78,7 @@ dependencies {
         compile project(':videomodule')
     }
     compile project(':loadinglib')
+
+    //
+    compile 'com.xw.repo:xedittext:1.0.6@aar'
 }
