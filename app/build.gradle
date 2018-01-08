@@ -81,4 +81,7 @@ dependencies {
 
     //
     compile 'com.xw.repo:xedittext:1.0.6@aar'
+
+    //Android Crash 自动恢复
+    compile 'com.zxy.android:recovery:0.1.4'
 }
