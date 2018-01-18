@@ -82,4 +82,7 @@ dependencies {
     //springView
     compile 'com.liaoinstan.springview:library:1.3.0'
 
+    //Android选择器
+    compile 'cn.qqtheme.framework:AndroidPicker:latest.integration'
+
 }
