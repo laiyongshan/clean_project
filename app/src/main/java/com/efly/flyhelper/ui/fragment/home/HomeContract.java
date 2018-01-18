@@ -9,7 +9,7 @@ import java.util.HashMap;
  * Created by Administrator on 2017/8/25.
  */
 
-public class HomeContract {
+public class  HomeContract {
 
     interface View extends BaseView{
         void showProgress();

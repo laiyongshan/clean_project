@@ -1,5 +1,6 @@
 package com.lys.base.base;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
@@ -21,6 +22,7 @@ import android.widget.TextView;
 import com.lys.base.AppManager;
 import com.lys.base.R;
 import com.lys.base.utils.DialogCreator;
+import com.lys.base.utils.KnifeKit;
 
 import java.util.List;
 
@@ -176,7 +178,15 @@ public class BaseActivity<T extends BasePresenter>
         ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT);
         content.addView(contentView, params);
+
+        bindUI(null);
     }
+
+
+    public void bindUI(View rootView) {
+        KnifeKit.bind(this);
+    }
+
 
     /**
      * 设置标题
@@ -188,6 +198,7 @@ public class BaseActivity<T extends BasePresenter>
             commonTitleTv.setText(title);
         }
     }
+
 
     /**
      * 设置标题
@@ -207,6 +218,7 @@ public class BaseActivity<T extends BasePresenter>
      * @param resultCode
      * @param data
      */
+    @SuppressLint("RestrictedApi")
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         FragmentManager fm = getSupportFragmentManager();
