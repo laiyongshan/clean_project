@@ -57,6 +57,7 @@ public class BaseApplication extends Application {
                 .build();
 
         OkHttpUtils.initClient(okHttpClient);
+
     }
 
     /**

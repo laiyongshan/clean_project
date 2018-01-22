@@ -1,30 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/dialog_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
     android:background="#aa000000"
-    android:gravity="center"
-    >
+    android:gravity="center">
 
-    <ImageView
-        android:id="@+id/loading_img"
+    <!--<ImageView-->
+        <!--android:id="@+id/loading_img"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:src="@drawable/loading" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/loading_txt"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/loading_img"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="Loading......."-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textSize="18sp"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--/>-->
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/loading" />
-
-    <TextView
-        android:id="@+id/loading_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/loading_img"
-        android:layout_centerHorizontal="true"
-        android:text="Loading......."
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:layout_marginTop="12dp"
-        />
+        android:visibility="visible"
+        app:indicatorColor="#fff"
+        app:indicatorName="BallSpinFadeLoaderIndicator" />
 
 </RelativeLayout>

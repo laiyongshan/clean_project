@@ -23,6 +23,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends BaseActivity<MainContract.Presenter> implements MainContract.View {
 
+
     private static final String TAG = MainActivity.class.getSimpleName();
     @BindView(R.id.toolbar)
     Toolbar toolbar;

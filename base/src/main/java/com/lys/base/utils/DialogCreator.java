@@ -25,16 +25,31 @@ import com.squareup.picasso.Picasso;
 
 public class DialogCreator {
 
-    public static Dialog createLoadingDialog(Context context, String msg) {
-        Log.e("create-->", "createLoadingDialog" + "");
+//    public static Dialog createLoadingDialog(Context context, String msg) {
+//        Log.e("create-->", "createLoadingDialog" + "");
+//        LayoutInflater inflater = LayoutInflater.from(context);
+//        View v = inflater.inflate(R.layout.loading_view, null);
+//        RelativeLayout layout = (RelativeLayout) v.findViewById(R.id.dialog_view);
+//        ImageView mLoadImg = (ImageView) v.findViewById(R.id.loading_img);
+//        TextView mLoadText = (TextView) v.findViewById(R.id.loading_txt);
+//        AnimationDrawable mDrawable = (AnimationDrawable) mLoadImg.getDrawable();
+//        mDrawable.start();
+//        mLoadText.setText(msg);
+//        final Dialog loadingDialog = new Dialog(context, R.style.LoadingDialog);
+//        loadingDialog.setCancelable(true);
+//        loadingDialog.setCanceledOnTouchOutside(false);
+//        loadingDialog.setContentView(layout, new LinearLayout.LayoutParams(
+//                LinearLayout.LayoutParams.MATCH_PARENT,
+//                LinearLayout.LayoutParams.MATCH_PARENT));
+//        return loadingDialog;
+//    }
+
+
+    public static Dialog createLoadingDialog(Context context,String msg){
+
         LayoutInflater inflater = LayoutInflater.from(context);
         View v = inflater.inflate(R.layout.loading_view, null);
         RelativeLayout layout = (RelativeLayout) v.findViewById(R.id.dialog_view);
-        ImageView mLoadImg = (ImageView) v.findViewById(R.id.loading_img);
-        TextView mLoadText = (TextView) v.findViewById(R.id.loading_txt);
-        AnimationDrawable mDrawable = (AnimationDrawable) mLoadImg.getDrawable();
-        mDrawable.start();
-        mLoadText.setText(msg);
         final Dialog loadingDialog = new Dialog(context, R.style.LoadingDialog);
         loadingDialog.setCancelable(true);
         loadingDialog.setCanceledOnTouchOutside(false);

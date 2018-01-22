@@ -85,4 +85,7 @@ dependencies {
     //Android选择器
     compile 'cn.qqtheme.framework:AndroidPicker:latest.integration'
 
+    //Loding
+    compile 'com.wang.avi:library:2.1.3'
+
 }
