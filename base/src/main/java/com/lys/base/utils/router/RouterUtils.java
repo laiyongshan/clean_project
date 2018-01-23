@@ -11,7 +11,6 @@ public class RouterUtils {
 
     public static void inject(Object obj){
         ARouter.getInstance().inject(obj);
-
     }
 
     /**
@@ -25,8 +24,6 @@ public class RouterUtils {
         return  ARouter.getInstance().build(path).navigation();
     }
 
-
-
     public void startActivityForResult(Activity activity,String path,int requestCode,String argKey,Object argValue) {
         ARouter.getInstance().build(path).
                 withObject(argKey, argValue).
@@ -37,7 +34,6 @@ public class RouterUtils {
 // 使用两个参数的navigation方法，可以获取单次跳转的结果
         //ARouter.getInstance().build("/test/1").navigation(this, new NavigationCallback() );
     }
-
 
 }
 
