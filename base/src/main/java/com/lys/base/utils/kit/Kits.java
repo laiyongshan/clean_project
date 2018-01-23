@@ -757,7 +757,7 @@ public class Kits {
         /**
          * delete file or directory
          * <ul>
-         * <li>if path is null or empty, return true</li>
+         * <   li>if path is null or empty, return true</li>
          * <li>if path not exist, return true</li>
          * <li>if path exist, delete recursion. return true</li>
          * <ul>
