@@ -34,7 +34,7 @@ public class AppConfig {
     //注册图片存放地址
     public static final String REGIEST_IMG = DIR_YZF_ROOT;
     public static final String DIR_PICTURE = DIR_YZF_ROOT + "picture/";
-    
+
     // 消费、撤销错误码
     public static Map<String, String> errorCode = new HashMap<>();
     public static Map<String, String> serviceType = new HashMap<>();
